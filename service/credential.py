@@ -28,13 +28,11 @@ if not creds or not creds.valid:
     with open(token_pickle_path, 'wb') as token:
         pickle.dump(creds, token)
 
-print(f'refresh_token: {creds.refresh_token}')
+#print(f'refresh_token: {creds.refresh_token}')
 service = build('calendar', 'v3', credentials=creds)
 
 now = datetime.utcnow()
-
 start_of_today = datetime(now.year, now.month, now.day, 0, 0, 0)
-
 end_of_today = start_of_today + timedelta(days=1)
 
 start_time = start_of_today.isoformat() + 'Z'
