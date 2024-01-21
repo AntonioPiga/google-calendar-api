@@ -10,6 +10,7 @@ packages:
       REDIRECT_URIS_0: ${REDIRECT_URIS_0}
       REDIRECT_URIS_1: ${REDIRECT_URIS_1}
       JAVASCRIPT_ORIGINS_0: ${JAVASCRIPT_ORIGINS_0}
+      OPEN_AI_KEY: ${OPEN_AI_KEY}
     actions:
       demo:
         web: true

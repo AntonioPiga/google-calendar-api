@@ -11,4 +11,4 @@ tasks:
   deploy:
     dir: packages
     cmds:
-      - nuv -wsk project deploy
+      - wsk project deploy
